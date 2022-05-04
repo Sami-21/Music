@@ -1,6 +1,8 @@
 <template>
   <div class="cardContainer">
-    <div class="imageContainer"></div>
+    <div class="imageContainer">
+      <img :src="require(`@/assets/${ImageName}`)" alt="pic" />
+    </div>
     <div class="textContainer">
       <h2>{{ CardTitle.toUpperCase() }}</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -11,29 +13,27 @@
 <script>
 export default {
   props: {
-    ImageURL: String,
+    ImageName: String,
     CardTitle: String,
-  },
-  computed: {
-    image() {
-      return `background:url(${this.ImageURL})`;
-    },
   },
 };
 </script>
 
 <style scoped>
 .cardContainer {
+  position: relative;
   width: 100%;
   height: 650px;
 }
-.imageContainer {
+.imageContainer img {
   width: 100%;
-  height: 400px;
-  background: url("../assets/images.png");
+  height: 100%;
   background-size: cover;
 }
 .textContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding-top: 30px;
   width: 100%;
   height: 250px;
