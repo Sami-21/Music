@@ -32,7 +32,7 @@
 
     <ul
       id="NavItems"
-      class="md:flex md:h-full md:relative md:top-0 md:left-0 flex-col md:flex-row justify-between items-center lg:text-3xl text-xl absolute top-32 left-0 text-center h-60 py-4"
+      class="md:flex md:h-full md:relative md:top-0 md:left-0 flex-col md:flex-row justify-between items-center lg:text-3xl text-xl absolute -top-60 left-0 text-center h-60 py-4 z-0"
     >
       <li>HOME</li>
       <li>PRODUCT</li>
@@ -44,10 +44,10 @@
     <div class="pl-20 text-center">
       <v-icon dark size="52px">mdi-magnify</v-icon>
     </div>
-    <div id="icon" class="cursor-pointer md:hidden">
-      <div class="h-1 w-8 bg-white my-2"></div>
-      <div class="h-1 w-8 bg-white my-2"></div>
-      <div class="h-1 w-8 bg-white my-2"></div>
+    <div @click="toggleMenu()" id="NavBarIcon" class="cursor-pointer md:hidden">
+      <div class="h-1 w-8 bg-white my-2 duration-300"></div>
+      <div class="h-1 w-8 bg-white my-2 duration-300"></div>
+      <div class="h-1 w-8 bg-white my-2 duration-300"></div>
     </div>
   </nav>
 </template>
@@ -56,7 +56,16 @@
 export default {
   data: () => ({
     NavBarItems: ["test1", "test2", "test3", "test4", "test5"],
+    MenuClosed: true,
   }),
+  methods: {
+    toggleMenu() {
+      document.querySelector("#NavItems").classList.toggle("top-32");
+      document.querySelector("#NavItems").classList.toggle("-top-60");
+
+      console.log(document.querySelector("#NavBarIcon").childNodes);
+    },
+  },
 };
 </script>
 
@@ -67,6 +76,7 @@ nav {
 #NavItems {
   width: 750px;
   list-style: none;
+  transition: 500ms;
 }
 @media (max-width: 768px) {
   #NavItems {
