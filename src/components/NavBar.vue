@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-screen h-32 z-10 flex justify-between items-center px-16 fixed text-white top-0 left-0"
+    class="w-screen h-32 z-10 flex justify-between items-center px-16 fixed top-0 left-0"
   >
     <div class="w-48 text-center mr-8">
       <div class="w-full flex justify-center align-center">
@@ -32,7 +32,7 @@
 
     <ul
       id="NavItems"
-      class="md:flex md:h-full md:relative md:top-0 md:left-0 flex-col md:flex-row justify-between items-center lg:text-3xl text-xl absolute top-32 -left-full text-center md:opacity-100 opacity-0 h-60 py-4 z-10 md:border-t-0 border-t-2"
+      class="md:flex md:h-full md:relative md:top-0 md:left-0 flex-col md:flex-row justify-between items-center lg:text-3xl text-xl absolute top-32 -left-full text-center md:opacity-100 opacity-0 h-60 py-4 z-10 border-t-2 md:border-t-0"
     >
       <li>HOME</li>
       <li>PRODUCT</li>
@@ -51,7 +51,7 @@
     </div>
     <div
       id="searchContainer"
-      class="flex justify-center items-center w-full h-0 border-t-2 absolute top-32 left-0"
+      class="flex justify-center items-center w-full h-0 absolute top-32 left-0"
     >
       <input
         type="text"
@@ -83,6 +83,7 @@ export default {
       this.menuClosed = !this.menuClosed;
     },
     toggleSearchBar() {
+      document.querySelector("#searchContainer").classList.toggle("border-t-2");
       document.querySelector("#searchContainer").classList.toggle("h-0");
       document.querySelector("#searchContainer").classList.toggle("h-1/2");
       this.searchBarClosed = !this.searchBarClosed;
