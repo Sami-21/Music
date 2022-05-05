@@ -10,6 +10,7 @@
         ratione eius numquam maxime distinctio.
       </p>
       <button
+        data-aos="fade-up"
         class="sm:px-28 sm:py-5 mt-14 sm:text-3xl py-4 px-24 text-xl rounded"
       >
         REGISTER NOW
@@ -19,6 +20,11 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init();
+
 export default {};
 </script>
 

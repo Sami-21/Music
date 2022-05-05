@@ -3,7 +3,7 @@
     id="Pricing"
     class="min-h-screen w-screen flex flex-col items-center py-32 md:px-32 sm:px-16 px-12"
   >
-    <div class="lg:w-3/4 w-full mx-auto text-center px-16">
+    <div class="lg:w-3/4 w-full mx-auto text-center sm:px-16 px-8">
       <h1 class="lg:text-8xl md:text-7xl text-6xl font-bold mb-16">PRICING</h1>
       <p class="lg:text-4xl md:text-3xl text-2xl">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
