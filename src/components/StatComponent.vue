@@ -1,7 +1,9 @@
 <template>
-  <div class="statElement">
-    <h1>{{ Digit }}+</h1>
-    <h1>{{ Title }}</h1>
+  <div class="w-full text-center mb-20">
+    <h1 class="lg:text-7xl md:text-6xl text-5xl font-bold mb-8">
+      {{ (Digit / 1000).toFixed(3) }}+
+    </h1>
+    <h1 class="lg:text-5xl md:text-4xl text-3xl">{{ Title }}</h1>
   </div>
 </template>
 
@@ -14,16 +16,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.statElement {
-  width: 1fr;
-  height: fit-content;
-  text-align: center;
-}
-.statElement h1 {
-  font-size: 72px;
-}
-.statElement h1:nth-child(2) {
-  font-weight: 100;
-}
-</style>
+<style scoped></style>
