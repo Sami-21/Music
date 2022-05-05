@@ -3,6 +3,10 @@
     id="DanceTour"
     class="min-h-screen w-screen flex flex-col items-center py-32 md:px-32 sm:px-16 px-8"
   >
+    <img
+      src="@/assets/istockphoto-910331794-1024x1024-removebg-preview.png"
+      alt="dot"
+    />
     <div data-aos="fade-down" class="lg:w-3/4 w-full mx-auto text-center px-16">
       <h1 class="lg:text-8xl md:text-7xl text-6xl font-black mb-16">
         DANCE TOUR
@@ -37,6 +41,23 @@ export default {
 
 <style scoped>
 #DanceTour {
+  position: relative;
   background: #ff6309;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+  transform: rotate(5deg) translateX(-20px);
+  mask-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
 }
 </style>

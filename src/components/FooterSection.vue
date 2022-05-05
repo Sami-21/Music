@@ -1,9 +1,9 @@
 <template>
   <footer
-    class="w-screen grid lg:grid-rows-1 lg:grid-cols-2 grid-cols-1 grid-rows-1 pl-16 py-16 px-8 md:pt-36"
+    class="w-screen grid lg:grid-rows-1 lg:grid-cols-2 grid-cols-1 grid-rows-1 sm:pl-16 pt-16 md:pt-36"
   >
     <div
-      class="h-fit flex flex-col md:justify-start justify-center md:text-left text-center lg:mr-52"
+      class="h-fit flex flex-col md:justify-start justify-center md:text-left text-center lg:mr-52 px-4"
     >
       <h1 class="xl:text-5xl md:text-4xl text-3xl mb-10 font-bold">
         MUSICOLOGY
@@ -70,7 +70,7 @@
         </ul>
       </div>
       <div
-        class="flex flex-col justify-start sm:items-start items-center sm:text-left text-center sm:mb-0 mb-6"
+        class="flex flex-col justify-start sm:items-start items-center sm:text-left text-center"
       >
         <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10 font-bold">OTHER</h1>
         <ul>

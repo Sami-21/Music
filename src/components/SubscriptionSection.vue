@@ -1,5 +1,18 @@
 <template>
-  <section id="Subscription" class="w-screen flex justify-center items-center">
+  <section
+    id="Subscription"
+    class="w-screen flex justify-center items-center relative overflow-hidden"
+  >
+    <img
+      src="@/assets/istockphoto-910331794-1024x1024-removebg-preview.png"
+      alt="dot"
+      class="absolute top-0 left-0 h-full w-4/6 rotate-12 -translate-x-20 -translate-y-4 img1"
+    />
+    <img
+      src="@/assets/istockphoto-910331794-1024x1024-removebg-preview.png"
+      alt="dot"
+      class="absolute bottom-0 right-0 h-full w-4/6 rotate-12 translate-x-20 translate-y-4 img2"
+    />
     <div class="lg:w-7/12 w-full text-center px-16">
       <h1
         data-aos="fade-right"
@@ -50,5 +63,27 @@ export default {};
 }
 #subscribe {
   background: #2c2c2c;
+}
+.img1,
+.img2 {
+  height: 150%;
+  filter: invert(15%) sepia(0%) saturate(0%) hue-rotate(5deg) brightness(98%)
+    contrast(92%);
+}
+.img1 {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+.img2 {
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
 }
 </style>

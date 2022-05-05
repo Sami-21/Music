@@ -1,7 +1,7 @@
 <template>
   <section
     id="ShowCase"
-    class="w-screen min-h-screen grid grid-cols-1 grid-rows-2"
+    class="w-screen min-h-screen grid grid-cols-1 grid-rows-2 overflow-hidden"
   >
     <div
       class="w-screen min-h-screen grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-1 grid-rows-2"
@@ -16,8 +16,18 @@
       </div>
       <div
         data-aos="fade-left"
-        class="w-full h-full lg:text-left text-center flex flex-col justify-center lg:items-start items-center px-24 sm:pt-0 py-8"
+        class="w-full h-full lg:text-left text-center flex flex-col justify-center lg:items-start items-center px-24 sm:pt-0 py-8 relative"
       >
+        <img
+          class="bg-img1 absolute top-0 right-0"
+          src="@/assets/istockphoto-910331794-1024x1024-removebg-preview.png"
+          alt="dot"
+        />
+        <img
+          class="bg-img2 absolute bottom-0 right-0"
+          src="@/assets/istockphoto-910331794-1024x1024-removebg-preview.png"
+          alt="dot"
+        />
         <h1
           class="lg:text-8xl md:text-7xl sm:text-6xl text-4xl font-bold mb-16"
         >
@@ -39,8 +49,13 @@
     >
       <div
         data-aos="fade-right"
-        class="w-full h-full lg:text-left text-center flex flex-col justify-center lg:items-start items-center px-24 py-8 lg:order-1 order-2"
+        class="w-full h-full lg:text-left text-center flex flex-col justify-center lg:items-start items-center px-24 py-8 lg:order-1 order-2 relative"
       >
+        <img
+          class="bg-img3 absolute bottom-0 left-0"
+          src="@/assets/istockphoto-910331794-1024x1024-removebg-preview.png"
+          alt="dot"
+        />
         <h1
           class="lg:text-8xl md:text-7xl sm:text-6xl text-4xl font-bold mb-16"
         >
@@ -78,6 +93,52 @@ export default {};
 #ShowCase {
   background: #ff6309;
 }
+.bg-img1,
+.bg-img2,
+.bg-img3 {
+  height: 60%;
+  width: 120%;
+  z-index: -1;
+}
+.bg-img1 {
+  transform: rotate(10deg) translate(20px, -70px);
+  filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(212deg)
+    brightness(107%) contrast(106%);
+  opacity: 0.9;
+  mask-image: linear-gradient(
+    to bottom left,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+.bg-img2 {
+  transform: rotate(15deg) translateX(25px, 50px) !important;
+
+  filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(212deg)
+    brightness(107%) contrast(106%);
+
+  mask-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+.bg-img3 {
+  transform: rotate(90deg) translateX(25px, 0px) !important;
+  filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(212deg)
+    brightness(107%) contrast(106%);
+
+  mask-image: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+
 button {
   background: #2c2c2c;
 }
