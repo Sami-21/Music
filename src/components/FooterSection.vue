@@ -5,7 +5,9 @@
     <div
       class="h-fit flex flex-col md:justify-start justify-center md:text-left text-center lg:mr-52"
     >
-      <h1 class="xl:text-5xl md:text-4xl text-3xl mb-10">MUSICOLOGY</h1>
+      <h1 class="xl:text-5xl md:text-4xl text-3xl mb-10 font-bold">
+        MUSICOLOGY
+      </h1>
       <p class="xl:text-3xl md:text-2xl text-xl mb-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic
         labore temporibus corporis officiis, aspernatur, atque ad aliquam iste
@@ -44,7 +46,7 @@
       <div
         class="flex flex-col justify-start sm:items-start items-center sm:text-left text-center sm:mb-0 mb-6"
       >
-        <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10">ABOUT</h1>
+        <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10 font-bold">ABOUT</h1>
         <ul>
           <li class="xl:text-3xl sm:text-2xl text-lg mb-4">History</li>
           <li class="xl:text-3xl sm:text-2xl text-lg mb-4">Our Team</li>
@@ -56,7 +58,9 @@
       <div
         class="flex flex-col justify-start sm:items-start items-center sm:text-left text-center sm:mb-0 mb-6"
       >
-        <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10">SERVICES</h1>
+        <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10 font-bold">
+          SERVICES
+        </h1>
         <ul>
           <li class="xl:text-3xl sm:text-2xl text-lg mb-4">How To Order</li>
           <li class="xl:text-3xl sm:text-2xl text-lg mb-4">Our Product</li>
@@ -68,7 +72,7 @@
       <div
         class="flex flex-col justify-start sm:items-start items-center sm:text-left text-center sm:mb-0 mb-6"
       >
-        <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10">OTHER</h1>
+        <h1 class="xl:text-5xl sm:text-4xl text-3xl mb-10 font-bold">OTHER</h1>
         <ul>
           <li class="xl:text-3xl sm:text-2xl text-lg mb-4">Contact Us</li>
           <li class="xl:text-3xl sm:text-2xl text-lg mb-4">Help</li>

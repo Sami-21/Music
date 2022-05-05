@@ -23,7 +23,7 @@
           type="submit"
           id="subscribe"
           value="SUBSCRIBE"
-          class="w-2/6 py-6 text-xl rounded-tr rounded-br sm:text-3xl outline-0"
+          class="w-2/6 py-6 text-lg rounded-tr rounded-br sm:text-3xl outline-0 font-bold"
         />
       </form>
     </div>

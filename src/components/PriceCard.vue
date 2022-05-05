@@ -90,11 +90,13 @@
         </g>
       </svg>
     </div>
-    <h2 class="md:text-5xl text-4xl mb-12">{{ BundleName.toUpperCase() }}</h2>
+    <h2 class="md:text-5xl text-4xl mb-12 font-bold">
+      {{ BundleName.toUpperCase() }}
+    </h2>
     <p class="md:text-3xl text-2xl mb-8">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </p>
-    <button class="w-full p-6 md:text-4xl text-3xl rounded-md">
+    <button class="w-full p-6 md:text-4xl text-3xl rounded-md font-bold">
       ${{ (Math.round(BundlePrice * 100) / 100).toFixed(2) }}
     </button>
   </div>

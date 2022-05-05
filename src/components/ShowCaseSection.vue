@@ -27,7 +27,9 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
           atque sed nam consequatur corrupti.
         </p>
-        <button class="md:w-96 w-full h-20 md:text-4xl text-3xl rounded-md">
+        <button
+          class="md:w-96 w-full h-20 md:text-4xl text-3xl rounded-md font-bold"
+        >
           READ MORE
         </button>
       </div>
@@ -48,7 +50,9 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
           atque sed nam consequatur corrupti.
         </p>
-        <button class="md:w-96 w-full h-20 md:text-4xl text-3xl rounded-md">
+        <button
+          class="md:w-96 w-full h-20 md:text-4xl text-3xl rounded-md font-bold"
+        >
           READ MORE
         </button>
       </div>

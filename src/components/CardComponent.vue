@@ -11,7 +11,7 @@
       id="textContainer"
       class="absolute bottom-0 left-0 w-full h-52 text-center py-8 px-6"
     >
-      <h2 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl mb-4">
+      <h2 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl mb-4 font-bold">
         {{ CardTitle.toUpperCase() }}
       </h2>
       <p class="lg:text-2xl md:text-xl text-lg">
