@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-screen h-32 z-10 flex justify-between items-center px-16 fixed top-0 left-0"
+    class="w-screen h-32 z-10 flex justify-between items-center px-16 absolute top-0 left-0"
   >
     <div class="w-48 text-center mr-8">
       <div class="w-full flex justify-center align-center">
@@ -41,7 +41,7 @@
       <li>CONTACT</li>
     </ul>
 
-    <div class="pl-28 text-center">
+    <div class="sm:pl-28 pl-8 text-center">
       <v-icon @click="toggleSearchBar()" dark size="52px">mdi-magnify</v-icon>
     </div>
     <div @click="toggleMenu()" id="NavBarIcon" class="cursor-pointer md:hidden">

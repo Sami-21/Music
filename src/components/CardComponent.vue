@@ -1,11 +1,18 @@
 <template>
-  <div class="cardContainer">
-    <div class="imageContainer">
-      <img :src="require(`@/assets/${ImageName}`)" alt="pic" />
+  <div id="CardContainer" class="w-full relative">
+    <div class="w-full h-full bg-white">
+      <!-- <img :src="require(`@/assets/${ImageName}`)" alt="pic" class="" /> -->
     </div>
-    <div class="textContainer">
-      <h2>{{ CardTitle.toUpperCase() }}</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div
+      id="textContainer"
+      class="absolute bottom-0 left-0 w-full h-52 text-center py-8 px-6"
+    >
+      <h2 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl mb-4">
+        {{ CardTitle.toUpperCase() }}
+      </h2>
+      <p class="lg:text-2xl md:text-xl text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
     </div>
   </div>
 </template>
@@ -20,30 +27,14 @@ export default {
 </script>
 
 <style scoped>
-.cardContainer {
-  position: relative;
-  width: 100%;
-  height: 650px;
+#CardContainer {
+  height: 615px;
 }
-.imageContainer img {
+img {
   width: 100%;
   height: 100%;
-  background-size: cover;
 }
-.textContainer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding-top: 30px;
-  width: 100%;
-  height: 250px;
+#textContainer {
   background: #2c2c2c;
-  text-align: center;
-}
-.textContainer h2 {
-  font-size: 48px;
-}
-.textContainer p {
-  font-size: 36px;
 }
 </style>
