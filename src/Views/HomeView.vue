@@ -1,20 +1,27 @@
 <template>
   <main class="min-h-screen w-screen text-white">
-    <!-- <NavBar /> -->
+    <NavBar />
     <IntroSection />
     <DanceTourSection />
     <PricingSection />
+    <ShowCaseSection />
   </main>
 </template>
 <script>
-// import NavBar from "../components/NavBar.vue";
+import NavBar from "../components/NavBar.vue";
 import IntroSection from "@/components/IntroSection.vue";
 import DanceTourSection from "@/components/DanceTourSection.vue";
 import PricingSection from "@/components/PricingSection.vue";
-// import PriceCard from "../components/PriceCard.vue";
+import ShowCaseSection from "@/components/ShowCaseSection.vue";
 // import StatComponent from "@/components/StatComponent.vue";
 export default {
-  components: { IntroSection, DanceTourSection, PricingSection },
+  components: {
+    NavBar,
+    IntroSection,
+    DanceTourSection,
+    PricingSection,
+    ShowCaseSection,
+  },
 };
 </script>
 

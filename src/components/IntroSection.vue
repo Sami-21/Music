@@ -1,7 +1,7 @@
 <template>
   <section
     id="IntroSection"
-    class="relative min-h-screen w-screen flex items-end py-16 sm:px-28 px-14"
+    class="relative min-h-screen w-screen flex items-end py-24 sm:px-28 px-14"
   >
     <div class="xl:w-1/2 lg:my-0 w-full lg:text-left text-center my-auto">
       <h1 class="lg:text-9xl md:text-8xl text-7xl">Title Here</h1>

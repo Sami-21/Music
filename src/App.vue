@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <HomeView />
-  </div>
+  <HomeView />
 </template>
 <script>
 import HomeView from "./Views/HomeView.vue";
