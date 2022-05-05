@@ -3,7 +3,13 @@
     id="DanceTour"
     class="min-h-screen w-screen flex flex-col items-center py-32 md:px-32 sm:px-16 px-8"
   >
-    <div class="lg:w-3/4 w-full mx-auto text-center px-16">
+    <Particles
+      id="tsparticles"
+      :particlesInit="particlesInit"
+      :particlesLoaded="particlesLoaded"
+      url="http://foo.bar/particles.json"
+    />
+    <div data-aos="fade-down" class="lg:w-3/4 w-full mx-auto text-center px-16">
       <h1 class="lg:text-8xl md:text-7xl text-6xl font-bold mb-16">
         DANCE TOUR
       </h1>
@@ -15,16 +21,24 @@
     <div
       class="grid gap-20 xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 w-full min-h-fit mt-24"
     >
-      <CardComponent CardTitle="ASIA" />
-      <CardComponent CardTitle="AMERICA" />
-      <CardComponent CardTitle="AUSTRALIA" />
+      <CardComponent CardTitle="ASIA" ImageName="images.png" />
+      <CardComponent CardTitle="AMERICA" ImageName="M2.jpeg" />
+      <CardComponent CardTitle="AUSTRALIA" ImageName="M1.jpeg" />
     </div>
   </section>
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init({
+  duration: 750,
+});
 import CardComponent from "./CardComponent.vue";
-export default { components: { CardComponent } };
+export default {
+  components: { CardComponent },
+};
 </script>
 
 <style scoped>

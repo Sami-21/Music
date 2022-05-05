@@ -1,5 +1,6 @@
 <template>
   <div
+    data-aos="fade-up"
     id="cardContainer"
     class="w-full rounded-xl flex flex-col items-center justify-between p-7 text-center"
   >
@@ -100,6 +101,10 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init();
 export default {
   props: {
     BundleName: String,

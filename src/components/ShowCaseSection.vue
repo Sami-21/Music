@@ -6,7 +6,7 @@
     <div
       class="w-screen min-h-screen grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-1 grid-rows-2"
     >
-      <div class="w-full">
+      <div data-aos="fade-right" class="w-full">
         <img
           id="img1"
           src="@/assets/M1.jpeg"
@@ -15,6 +15,7 @@
         />
       </div>
       <div
+        data-aos="fade-left"
         class="w-full h-full lg:text-left text-center flex flex-col justify-center lg:items-start items-center px-24 sm:pt-0 py-8"
       >
         <h1
@@ -35,6 +36,7 @@
       class="w-screen min-h-screen grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-1 grid-rows-2"
     >
       <div
+        data-aos="fade-right"
         class="w-full h-full lg:text-left text-center flex flex-col justify-center lg:items-start items-center px-24 py-8 lg:order-1 order-2"
       >
         <h1
@@ -50,7 +52,7 @@
           READ MORE
         </button>
       </div>
-      <div class="w-full lg:order-2 order-1">
+      <div data-aos="fade-left" class="w-full lg:order-2 order-1">
         <img id="img1" src="@/assets/M2.jpeg" alt="M1" class="w-full h-full" />
       </div>
     </div>
@@ -58,6 +60,13 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init({
+  duration: 750,
+});
+
 export default {};
 </script>
 

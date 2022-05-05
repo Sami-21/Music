@@ -1,14 +1,17 @@
 <template>
   <section id="Subscription" class="w-screen flex justify-center items-center">
     <div class="lg:w-7/12 w-full text-center px-16">
-      <h1 class="lg:text-8xl md:text-7xl text-6xl font-bold mb-16">
+      <h1
+        data-aos="fade-right"
+        class="lg:text-8xl md:text-7xl text-6xl font-bold mb-16"
+      >
         SUBSCRIBE
       </h1>
-      <p class="lg:text-5xl md:text-4xl text-3xl mb-16">
+      <p data-aos="fade-right" class="lg:text-5xl md:text-4xl text-3xl mb-16">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
         atque sed nam consequatur corrupti.
       </p>
-      <form action="" class="mx-auto">
+      <form action="" class="mx-auto" data-aos="fade-left">
         <input
           class="w-4/6 p-6 bg-white text-xl sm:text-3xl outline-0 text-black"
           type="email"
@@ -28,6 +31,12 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init({
+  duration: 750,
+});
 export default {};
 </script>
 

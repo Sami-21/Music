@@ -22,7 +22,6 @@ import QuoteSection from "../components/QuoteSection.vue";
 import SubscriptionSection from "../components/SubscriptionSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
 
-// import StatComponent from "@/components/StatComponent.vue";
 export default {
   components: {
     NavBar,
@@ -38,4 +37,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+main {
+  overflow-x: hidden;
+}
+</style>

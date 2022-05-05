@@ -3,7 +3,7 @@
     id="Stats"
     class="min-h-screen w-screen flex flex-col items-center py-60 md:px-28 sm:px-16 px-0"
   >
-    <div class="lg:w-3/4 w-full mx-auto text-center px-16">
+    <div data-aos="fade-down" class="lg:w-3/4 w-full mx-auto text-center px-16">
       <h1 class="lg:text-8xl md:text-7xl text-6xl font-bold mb-16">
         OUR STATISTICS
       </h1>
@@ -13,6 +13,7 @@
       </p>
     </div>
     <div
+      data-aos="fade-up"
       class="w-full grid sm:grid-cols-3 sm:grid-rows-1 grid-cols-1 grid-rows-3 sm:mt-56 mt-20"
     >
       <StatComponent Title="Club" :Digit="1240" />
@@ -23,6 +24,13 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init({
+  duration: 750,
+});
+
 import StatComponent from "./StatComponent.vue";
 export default { components: { StatComponent } };
 </script>

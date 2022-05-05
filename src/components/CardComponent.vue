@@ -1,7 +1,11 @@
 <template>
-  <div id="CardContainer" class="w-full relative">
+  <div data-aos="fade-down" id="CardContainer" class="w-full relative">
     <div class="w-full h-full bg-white">
-      <!-- <img :src="require(`@/assets/${ImageName}`)" alt="pic" class="" /> -->
+      <img
+        :src="require(`@/assets/${ImageName}`)"
+        alt="pic"
+        class="w-full h-full"
+      />
     </div>
     <div
       id="textContainer"
@@ -18,6 +22,10 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init();
 export default {
   props: {
     ImageName: String,
@@ -30,10 +38,7 @@ export default {
 #CardContainer {
   height: 615px;
 }
-img {
-  width: 100%;
-  height: 100%;
-}
+
 #textContainer {
   background: #2c2c2c;
 }
