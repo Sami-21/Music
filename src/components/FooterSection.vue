@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="w-screen grid lg:grid-rows-1 lg:grid-cols-2 grid-cols-1 grid-rows-1 sm:pl-16 pt-16 md:pt-36"
+    class="w-screen grid lg:grid-rows-1 lg:grid-cols-2 grid-cols-1 grid-rows-1 sm:pl-16 sm:pb-6 pt-16 md:pt-36"
   >
     <div
       class="h-fit flex flex-col md:justify-start justify-center md:text-left text-center lg:mr-52 px-4"
@@ -15,25 +15,25 @@
       </p>
       <div class="mb-8">
         <v-icon
-          class="bg-white p-2 rounded-full mr-4"
+          class="bg-white p-2 rounded-full mr-4 cursor-pointer"
           size="36px"
           color="#2c2c2c"
           >mdi-instagram</v-icon
         >
         <v-icon
-          class="bg-white p-2 rounded-full mr-4"
+          class="bg-white p-2 rounded-full mr-4 cursor-pointer"
           size="36px"
           color="#2c2c2c"
           >mdi-facebook</v-icon
         >
         <v-icon
-          class="bg-white p-2 rounded-full mr-4"
+          class="bg-white p-2 rounded-full mr-4 cursor-pointer"
           size="36px"
           color="#2c2c2c"
           >mdi-twitter</v-icon
         >
         <v-icon
-          class="bg-white p-2 rounded-full mr-4"
+          class="bg-white p-2 rounded-full mr-4 cursor-pointer"
           size="36px"
           color="#2c2c2c"
           >mdi-whatsapp</v-icon

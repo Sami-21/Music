@@ -11,7 +11,7 @@
       </p>
       <button
         data-aos="fade-up"
-        class="sm:px-28 sm:py-5 mt-14 sm:text-3xl py-4 px-24 text-xl rounded font-bold"
+        class="relative sm:px-28 sm:py-5 mt-14 sm:text-3xl py-4 px-24 text-xl rounded font-bold"
       >
         REGISTER NOW
       </button>
